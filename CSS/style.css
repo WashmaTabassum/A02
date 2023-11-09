@@ -27,9 +27,7 @@ h1 {
 }
 
 .carousel-inner .c-item {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  max-height: 480px;
 }
 
 .carousel-inner .c-item img {
