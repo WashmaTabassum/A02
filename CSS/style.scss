@@ -1,4 +1,32 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
+
 $bgcolor:blue;
+// $headings:'Anton', sans-serif 'Rubik', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    font-family:'Rubik', sans-serif;
+}
+
+.nav-bg{
+    background-color:rgb(123, 223, 123);
+}
+
+#nav-logo{
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 0px 0;
+    }
+}
 
 
 // .bg{
