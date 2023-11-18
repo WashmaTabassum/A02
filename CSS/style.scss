@@ -28,6 +28,8 @@ h1{
     }
 }
 
+
+//mine
 // .carousel {
 //     height: auto;
 //     width:100%;
@@ -61,48 +63,54 @@ h1{
 // }  
 // }
 
-// .carousel {
-//     max-height: 500px;
-// }
-//     .carousel-item{
-//         height: 500px;
+#carouselExampleCaptions {
+    position: relative;
+.carousel {
+    max-height: 500px;
+}
+    .carousel-item{
+        height: 500px;
            
-//         img{
+        img{
            
-//             max-height: 100%;
-//         }
-//     }
+            max-height: 100%;
+        }
+    }
 
 .carousel {
     height: auto;
     width:100%;
     overflow: hidden;
-    max-height: 500px;}
+    max-height: 500px;
+}
 
     .carousel-item{
         max-height: 500px;
+        height:500px;
+        position: relative;
             #text1{
                 background-color:#11111b;
                 opacity: .7;
             }
             #text2{
-                background-color:#11111b;
-                opacity: .6;
+                background-color:#383f23;
+                opacity: .7;
             }
             #text3{
-                background-color:#11111b;
-                opacity: .6;
+                background-color:#10294b;
+                opacity: .7;
             }
         img{
             height: auto;
-            object-fit: contain;
+            // object-fit: cover;
             width:100%;
             max-height: 100%;
         }
     }
+}
 
 
-
+  
 
 // .bg{
 //     height: 100%;

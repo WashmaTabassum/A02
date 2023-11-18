@@ -22,36 +22,52 @@ h1 {
   padding: 0px 0;
 }
 
-.carousel {
+#carouselExampleCaptions {
+  position: relative;
+}
+
+#carouselExampleCaptions .carousel {
+  max-height: 500px;
+}
+
+#carouselExampleCaptions .carousel-item {
+  height: 500px;
+}
+
+#carouselExampleCaptions .carousel-item img {
+  max-height: 100%;
+}
+
+#carouselExampleCaptions .carousel {
   height: auto;
   width: 100%;
   overflow: hidden;
   max-height: 500px;
 }
 
-.carousel-item {
+#carouselExampleCaptions .carousel-item {
   max-height: 500px;
+  height: 500px;
+  position: relative;
 }
 
-.carousel-item #text1 {
+#carouselExampleCaptions .carousel-item #text1 {
   background-color: #11111b;
   opacity: .7;
 }
 
-.carousel-item #text2 {
-  background-color: #11111b;
-  opacity: .6;
+#carouselExampleCaptions .carousel-item #text2 {
+  background-color: #383f23;
+  opacity: .7;
 }
 
-.carousel-item #text3 {
-  background-color: #11111b;
-  opacity: .6;
+#carouselExampleCaptions .carousel-item #text3 {
+  background-color: #10294b;
+  opacity: .7;
 }
 
-.carousel-item img {
+#carouselExampleCaptions .carousel-item img {
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
   width: 100%;
   max-height: 100%;
 }
