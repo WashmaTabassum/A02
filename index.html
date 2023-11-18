@@ -94,5 +94,37 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div class="container-fluid bg-gradient" id="display">
+    <h2>Best Selling</h2>
+  </div>
+  <script>
+    fetch('books.json')
+    .then(response =>{
+      if(!response.ok){
+        throw new Error('Network response was not ok.')
+      }
+      return response.json();
+    })
+    .then(books=>
+    {
+      let html = '';
+      books.forEach(book => {
+      let htmlSegment = `
+        <div class="books bg-primary">
+        <img src="${book['cover-image']}">
+        <h2>${book.title}</h2> 
+        <p>${book.description}</p>
+        <p>${book.price}</p>
+        </div>
+      `;
+    html += htmlSegment;
+});
+  let resultant= document.getElementById("display");
+  resultant.innerHTML=html;
+    })
+    .catch(error =>{
+      console.error('Error fetching data');
+    })
+  </script>
   </body>
 </html>

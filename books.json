@@ -6,7 +6,7 @@
     "category": "Fiction",
     "price": 12.99,
     "description": "Classic novel set in the American South during the 1930s.",
-    "cover_image": "images/to_kill_a_mockingbird.jpg"
+    "cover_image": "assets/book1.jpg"
   },
   {
     "id": 2,
