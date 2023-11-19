@@ -32,7 +32,7 @@
     "author": "Herman Melville",
     "category": "Classic",
     "price": "$13.25",
-    "description": "Novel about the voyage of the whaling ship Pequod.",
+    "description": "Novel about voyage of whaling ship Pequod.",
     "cover_image": "assets/book-4.jpg"
   },
   {
@@ -59,7 +59,7 @@
     "author": "J.D. Salinger",
     "category": "Fiction",
     "price": "$8.50",
-    "description": "Novel known for its themes of teenage angst and alienation.",
+    "description": "Novel known for themes of teenage angst.",
     "cover_image": "assets/book7.jpg"
   },
   {
@@ -104,7 +104,7 @@
     "author": "Charles Dickens",
     "category": "Classic",
     "price": "$12.25",
-    "description": "Historical novel set during the French Revolution.",
+    "description": "Historical novel during the French Revolution.",
     "cover_image": "assets/book-12.jpg"
   },
   {
@@ -221,7 +221,7 @@
     "author": "Margaret Mitchell",
     "category": "Historical Fiction",
     "price": "$13.50",
-    "description": "Historical novel set in the American South during the Civil War.",
+    "description": "Historical novel set during Civil War.",
     "cover_image": "assets/book25.jpg"
   },
   {

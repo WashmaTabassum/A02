@@ -143,13 +143,24 @@ h2{
     height:350px;
 }
 
-#button-style{
+@mixin customButton {
     background: $bgcolor;
     transition: background-color 0.3s ;
     font-family: $font;
     &:hover{
         background-color: rgb(86, 112, 98);
     }
+  }
+  
+  // Usage of mixin
+  #button-style {
+    @include customButton;
+  }
+  
+.containerspecial{
+    justify-content: center;
+    display: flex;
+    // align-items: center;
 }
   
 .card {
