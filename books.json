@@ -15,7 +15,7 @@
     "category": "Dystopian",
     "price": 9.99,
     "description": "Classic dystopian novel about totalitarianism and surveillance.",
-    "cover_image": "images/1984.jpg"
+    "cover_image": "assets/book2.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "category": "Classic",
     "price": 11.50,
     "description": "A story of the Jazz Age and the American Dream.",
-    "cover_image": "images/great_gatsby.jpg"
+    "cover_image": "assets/book3.jpg"
   },
   {
     "id": 4,
@@ -60,7 +60,7 @@
     "category": "Fiction",
     "price": 8.50,
     "description": "Novel known for its themes of teenage angst and alienation.",
-    "cover_image": "images/catcher_in_the_rye.jpg"
+    "cover_image": "assets/book7.jpg"
   },
   {
     "id": 8,
@@ -222,7 +222,7 @@
     "category": "Historical Fiction",
     "price": 13.50,
     "description": "Historical novel set in the American South during the Civil War.",
-    "cover_image": "images/gone_with_the_wind.jpg"
+    "cover_image": "assets/book25.jpg"
   },
   {
     "id": 26,
@@ -231,7 +231,7 @@
     "category": "Contemporary",
     "price": 10.99,
     "description": "Contemporary novel set in Afghanistan.",
-    "cover_image": "images/kite_runner.jpg"
+    "cover_image": "assets/book-26.jpg"
   },
   {
     "id": 27,
