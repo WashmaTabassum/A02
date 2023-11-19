@@ -94,6 +94,17 @@ h2 {
   background-color: #567062;
 }
 
+#searchbtn {
+  background: #9cc5b2;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  font-family: "Rubik", sans-serif;
+}
+
+#searchbtn:hover {
+  background-color: #567062;
+}
+
 .containerspecial {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
