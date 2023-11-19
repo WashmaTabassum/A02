@@ -2,8 +2,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
 
-$bgcolor:skyblue;
+$bgcolor:rgb(156, 197, 178);
 // $headings:'Anton', sans-serif 'Rubik', sans-serif;
+
+body{
+    background: skyblue;
+}
 
 *{
     padding: 0;
@@ -15,6 +19,11 @@ h1{
     font-family:'Rubik', sans-serif;
 }
 
+h2{
+    background-color: $bgcolor;
+    font-family:'Rubik', sans-serif;
+}
+ 
 .nav-bg{
     background-color:rgb(156, 197, 178);
 }
@@ -81,12 +90,12 @@ h1{
     height: auto;
     width:100%;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 600px;
 }
 
     .carousel-item{
-        max-height: 500px;
-        height:500px;
+        max-height: 600px;
+        height:600px;
         position: relative;
             #text1{
                 background-color:#11111b;
@@ -115,13 +124,16 @@ h1{
     }
 }
 
+#image{
+    width:100%;
+    height:350px;
+}
 
+#button-style{
+    display: flex;
+}
   
 
 // .bg{
-//     height: 100%;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-attachment: fixed;
+//     background-color: rgb(248, 220, 210);
 // }

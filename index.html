@@ -95,8 +95,8 @@
     </button>
   </div>
   
-  <div class="container bg-secondary">
-    <h2>Best Selling</h2>
+  <div class="container justify-content-center my-5">
+    <h2 class="text-center my-3 py-3">Best Selling</h2>
     <div class="row" id="display"></div>
   </div>
     
@@ -205,18 +205,22 @@
           let html = '';
     
           books.forEach(book => {
-            if (book.id === 1 || book.id === 2 || book.id === 3 || book.id === 7 || book.id === 26 || book.id === 25) {
+            if (book.id === 1 || book.id === 2 || book.id === 3 || book.id === 7 || book.id === 12 || book.id === 18 || book.id === 26 || book.id === 28) {
               
     
               // Generate Bootstrap card HTML for each book
               let htmlSegment = `
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="card mb-3">
-                    <img src="${book.cover_image}" class="card-img-top" alt="Book Cover" width="20px" height="400px">
+                    <img src="${book.cover_image}" id="image" class="card-img-top" alt="Book Cover" >
                     <div class="card-body">
                       <h5 class="card-title">${book.title}</h5>
                       <p class="card-text">${book.description}</p>
                       <p class="card-text">${book.price}</p>
+                      <div class="button-container">
+                        <button type="button" class="btn btn-outline-secondary custom-button">Secondary</button>
+                        <button type="button" class="btn btn-outline-secondary custom-button">Secondary</button>
+                      </div>
                     </div>
                   </div>
                 </div>
