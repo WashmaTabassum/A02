@@ -96,7 +96,7 @@
   </div>
   
   <div class="container justify-content-center my-5">
-    <h2 class="text-center my-3 py-3">Best Selling</h2>
+    <h2 class="text-center text-light my-3 py-2 display-6 fw-bold">Best Selling</h2>
     <div class="row" id="display"></div>
   </div>
     
@@ -211,15 +211,15 @@
               // Generate Bootstrap card HTML for each book
               let htmlSegment = `
                 <div class="col-md-3">
-                  <div class="card mb-3">
+                  <div class="card mb-3 mx-1 my-4">
                     <img src="${book.cover_image}" id="image" class="card-img-top" alt="Book Cover" >
                     <div class="card-body">
                       <h5 class="card-title">${book.title}</h5>
                       <p class="card-text">${book.description}</p>
                       <p class="card-text">${book.price}</p>
                       <div class="button-container">
-                        <button type="button" class="btn btn-outline-secondary custom-button">Secondary</button>
-                        <button type="button" class="btn btn-outline-secondary custom-button">Secondary</button>
+                        <button type="button" class="btn custom-button text-light" id="button-style">Add to cart</button>
+                        <button type="button" class="btn custom-button text-light" id="button-style">View Cart</button>
                       </div>
                     </div>
                   </div>

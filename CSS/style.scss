@@ -3,10 +3,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
 
 $bgcolor:rgb(156, 197, 178);
-// $headings:'Anton', sans-serif 'Rubik', sans-serif;
-
-body{
-    background: skyblue;
+$font:'Rubik', sans-serif;
+$lightShadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$mediumShadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+$strongShadow: 0 12px 24px rgba(67, 104, 91, 0.5); 
+$hoverColor: white; 
+.bg{
+    background-color: rgb(250, 249, 249);
 }
 
 *{
@@ -16,12 +19,12 @@ body{
     
 }
 h1{
-    font-family:'Rubik', sans-serif;
+    font-family:$font;
 }
 
 h2{
     background-color: $bgcolor;
-    font-family:'Rubik', sans-serif;
+    font-family:$font;
 }
  
 .nav-bg{
@@ -39,64 +42,17 @@ h2{
 
 
 //mine
-// .carousel {
-//     height: auto;
-//     width:100%;
-//     overflow: hidden;
-//     max-height: 500px;
-// .carousel-inner{
-//     width: 100%;
-//     height:auto;
-//     object-fit: contain;
-//     .carousel-item{
-//         max-height: 500px;
-//             #text1{
-//                 background-color:#11111b;
-//                 opacity: .7;
-//             }
-//             #text2{
-//                 background-color:#11111b;
-//                 opacity: .6;
-//             }
-//             #text3{
-//                 background-color:#11111b;
-//                 opacity: .6;
-//             }
-//         img{
-//             height: auto;
-//             object-fit: contain;
-//             width:100%;
-//             max-height: 100%;
-//         }
-//     }
-// }  
-// }
-
-#carouselExampleCaptions {
-    position: relative;
-.carousel {
-    max-height: 500px;
-}
-    .carousel-item{
-        height: 500px;
-           
-        img{
-           
-            max-height: 100%;
-        }
-    }
-
 .carousel {
     height: auto;
     width:100%;
     overflow: hidden;
-    max-height: 600px;
-}
-
+    max-height: 500px;
+.carousel-inner{
+    width: 100%;
+    height:auto;
+    object-fit: contain;
     .carousel-item{
-        max-height: 600px;
-        height:600px;
-        position: relative;
+        max-height: 500px;
             #text1{
                 background-color:#11111b;
                 border-radius: 5px;
@@ -107,7 +63,7 @@ h2{
                 background-color:#383f23;
                 border-radius: 5px;
                 opacity: .7;
-                font-family:'Rubik', sans-serif;;
+                font-family:'Rubik', sans-serif;
             }
             #text3{
                 background-color:#10294b;
@@ -117,12 +73,70 @@ h2{
             }
         img{
             height: auto;
-            // object-fit: cover;
+            object-fit: contain;
             width:100%;
             max-height: 100%;
         }
     }
+}  
 }
+
+// #carouselExampleCaptions {
+//     position: relative;
+// .carousel {
+//     max-height: 600px;
+//     @media (max-width: 768px) {
+//         max-height: 400px; /* Adjust the max-height for smaller screens */
+//       }
+// }
+//     .carousel-item{
+//         height: 600px;
+//         @media (max-width: 768px) {
+//             height: 400px; /* Adjust the height for smaller screens */
+//           }   
+//         img{
+           
+//             max-height: 100%;
+//         }
+//     }
+
+// .carousel {
+//     height: auto;
+//     width:100%;
+//     overflow: hidden;
+//     max-height: 600px;
+// }
+
+//     .carousel-item{
+//         max-height: 600px;
+//         height:600px;
+//         position: relative;
+//             #text1{
+//                 background-color:#11111b;
+//                 border-radius: 5px;
+//                 opacity: .7;
+//                 font-family:'Rubik', sans-serif;
+//             }
+//             #text2{
+//                 background-color:#383f23;
+//                 border-radius: 5px;
+//                 opacity: .7;
+//                 font-family:'Rubik', sans-serif;;
+//             }
+//             #text3{
+//                 background-color:#10294b;
+//                 border-radius: 5px;
+//                 opacity: .7;
+//                 font-family:'Rubik', sans-serif;
+//             }
+//         img{
+//             height: auto;
+            
+//             width:100%;
+//             max-height: 100%;
+//         }
+//     }
+// }
 
 #image{
     width:100%;
@@ -130,9 +144,23 @@ h2{
 }
 
 #button-style{
-    display: flex;
+    background: $bgcolor;
+    transition: background-color 0.3s ;
+    font-family: $font;
+    &:hover{
+        background-color: rgb(86, 112, 98);
+    }
 }
   
+.card {
+    box-shadow: $mediumShadow;
+    transition: box-shadow 0.3s, background-color 0.3s; 
+        &:hover {
+            box-shadow: $mediumShadow, $strongShadow; 
+            background-color: $hoverColor;
+        }
+}
+
 
 // .bg{
 //     background-color: rgb(248, 220, 210);
