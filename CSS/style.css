@@ -128,4 +128,87 @@ h2 {
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(67, 104, 91, 0.5);
   background-color: white;
 }
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer #foot-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Company information section */
+  /* Social media icons section */
+  /* Additional information section */
+}
+
+.footer #foot-container .footer-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.footer #foot-container .footer-info h3 {
+  margin-bottom: 10px;
+}
+
+.footer #foot-container .social-icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer #foot-container .social-icons .social-icon {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.footer #foot-container .social-icons .social-icon:hover {
+  color: #55acee;
+  /* Change color on hover */
+}
+
+.footer #foot-container .additional-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.footer #foot-container .additional-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer #foot-container .additional-info ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer #foot-container .additional-info ul li:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=style.css.map */
