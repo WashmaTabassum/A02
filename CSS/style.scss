@@ -2,12 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@500&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,900&display=swap');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 $bgcolor:rgb(156, 197, 178);
 $font:'Rubik', sans-serif;
 $lightShadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $mediumShadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 $strongShadow: 0 12px 24px rgba(67, 104, 91, 0.5); 
 $hoverColor: white; 
+$pfont:'Raleway', sans-serif;;
 .bg{
     background-color: rgb(222, 232, 226);
 }
@@ -25,6 +27,13 @@ h1{
 h2{
     background-color: $bgcolor;
     font-family:$font;
+}
+
+h3{
+  font-family:$font;
+}
+p{
+  font-family:$pfont;
 }
  
 .nav-bg{
@@ -238,4 +247,35 @@ h2{
       }
     }
   }
+
+  ul.list-inline {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  ul.list-inline li {
+    display: inline-block;
+  }
+  
+  ul.list-inline li a {
+    font-size: 20px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card form input[type="text"],
+  .card form input[type="email"],
+  .card form textarea {
+    border: 1px solid #ced4da;
+  }
+  .card form input[type="text"]:focus,
+.card form input[type="email"]:focus,
+.card form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 
