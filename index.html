@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="javascript.js"></script>
+    <script src="javascript/index.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -118,9 +118,9 @@
   <footer class="footer">
     <div class="container" id="foot-container">
       <div class="footer-info">
-        <h3>Company Name</h3>
-        <p>A brief description of the company goes here.</p>
-        <p>Contact: contact@company.com</p>
+        <h3>Online Library Managment System</h3>
+        <p>your premier destination for discovering a diverse collection of books spanning various genres, authors, and topics.</p>
+        <p>Contact: onlinelibrary@gmail.com</p>
       </div>
       <div class="social-icons">
         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -138,99 +138,6 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- <script>
-    fetch('books.json')
-    .then(response =>{
-      if(!response.ok){
-        throw new Error('Network response was not ok.')
-      }
-      return response.json();
-    })
-    .then(books=>
-    {
-      let html = '';
-      books.forEach(book => {
-        if(book.id === 1 || book.id === 2 || book.id === 3) {
-      let htmlSegment = `
-      <div class="books ">
-        <img src="${book['cover-image']}">
-        <h2>${book.title}</h2> 
-        <p>${book.description}</p>
-        <p>${book.price}</p>
-        </div>
-      `;
-      // let htmlsegment = `
-      // <div class="card border-info mb-3" style="max-width: 18rem;">
-      // <div class="card-header">Header</div>
-      // <div class="card-body">
-      // <h5 class="card-title">${book.title}</h5>
-      // <p class="card-text">${book.description}</p>
-      // </div>
-      // </div>
-      // `;
-    html += htmlSegment;}
-});
-  let resultant= document.getElementById("display");
-  resultant.innerHTML=html;
-    })
-    .catch(error =>{
-      console.error('Error fetching data');
-    })
-  </script> -->
-
-  
-
-
-<!-- <script>
-  fetch('books.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok.')
-      }
-      return response.json();
-    })
-    .then(books => {
-      let html = '';
-
-      books.forEach((book, index) => {
-        if (book.id === 1 || book.id === 2 || book.id === 3) {
-          if (index % 3 === 0) {
-            // Create a new row for every three cards
-            html += '<div class="row">';
-          }
-
-          // Generate Bootstrap card HTML for each book
-          let htmlSegment = `
-            <div class="col-md-4">
-              <div class="card mb-3">
-                <img src="${book.cover_image}" class="card-img-top" alt="Book Cover">
-                <div class="card-body">
-                  <h5 class="card-title">${book.title}</h5>
-                  <p class="card-text">${book.description}</p>
-                  <p class="card-text">${book.price}</p>
-                </div>
-              </div>
-            </div>
-          `;
-          html += htmlSegment;
-
-          if ((index + 1) % 3 === 0 ) {
-            // Close the row after every three cards or at the end of the book list
-            html += '</div>';
-          }
-        }
-      });
-
-      let resultant = document.getElementById("display");
-      resultant.innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    }); -->
-
-
 
   </body>
 </html>

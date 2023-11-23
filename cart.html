@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="javascript.js"></script>
+    <script src="javascript/dystopian.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -67,63 +67,40 @@
     </nav>
   </div>
 
-  <div id="bookList">
-    <!-- Book items will be displayed here -->
+  <div class="container-fluid justify-content-center my-5">
+    <h2 class="text-center text-light my-3 py-2 display-6 fw-bold">Shopping Cart</h2>
   </div>
-  <p>Total Amount: <span id="totalAmount">$0.00</span></p>
+  
+  <div class="container justify-content-center my-5" id="cartDisplay">
+    <!-- Cart items will be displayed here -->
+  </div>
+  <div class="container justify-content-center my-5">
+    <div>Total Amount: <span id="totalAmount">$0.00</span></div>
+  </div>
 
-  <script>
-    fetch('books.json')
-    .then(response => response.json())
-    .then(data => {
-      const booksData = data;
-
-      displayBooks(booksData);
-    })
-    .catch(error => console.error('Error fetching data:', error));
-
-    let cartItems = []; // Array to store books added to the cart
-
-//   function displayBooks(books) {
-//     const bookListDiv = document.getElementById('bookList');
-//     bookListDiv.innerHTML = '';
-
-//     books.forEach(book => {
-//       const bookDiv = document.createElement('div');
-//       bookDiv.innerHTML = `
-//         <img src="${book.cover_image}" alt="${book.title}" style="max-width: 100px;"/>
-//         <h3>${book.title}</h3>
-//         <p><strong>Author:</strong> ${book.author}</p>
-//         <p><strong>Category:</strong> ${book.category}</p>
-//         <p><strong>Price:</strong> ${book.price}</p>
-//         <button onclick="addToCart(${book.id})">Add to Cart</button>
-//       `;
-//       bookListDiv.appendChild(bookDiv);
-//     });
-//   }
-
-  function addToCart(bookId) {
-    // Find the book from the booksData based on the bookId
-    const selectedBook = booksData.find(book => book.id === bookId);
-
-    // Add the selected book to the cart
-    cartItems.push(selectedBook);
-
-    // Calculate total amount and update the display
-    updateTotalAmount();
-  }
-  function updateTotalAmount() {
-    const totalAmountSpan = document.getElementById('totalAmount');
-
-    // Calculate the total price for all items in the cart
-    const totalPrice = cartItems.reduce((total, book) => {
-      // Extract the price from the book data and convert it to a number
-      const price = parseFloat(book.price.replace('$', ''));
-      return total + price;
-    }, 0);
-
-    // Display the total amount in the cart
-    totalAmountSpan.textContent = `$${totalPrice.toFixed(2)}`;
-  }
-
-  </script>
+  <footer class="footer">
+    <div class="container" id="foot-container">
+      <div class="footer-info">
+        <h3>Online Library Managment System</h3>
+        <p>your premier destination for discovering a diverse collection of books spanning various genres, authors, and topics.</p>
+        <p>Contact: onlinelibrary@gmail.com</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="additional-info">
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>
+  
