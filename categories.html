@@ -24,10 +24,10 @@
                   <a class="nav-link active text-light fw-bold" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fw-bold" href="#">Cart</a>
+                  <a class="nav-link text-light fw-bold" href="cart.html">Cart</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light fw-bold" href="#">Contact Us</a>
+                  <a class="nav-link text-light fw-bold" href="contact.html">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-light fw-bold" href="categories.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,7 +53,7 @@
               </ul>
               <form class="d-flex ms-auto align-items-center">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit" id="searchbtn">Search</button>
+                <button class="btn btn-outline-success" type="submit" id="searchInput" onclick="searchBooks()">Search</button>
               </form>
             </div>
           </div>
@@ -68,6 +68,11 @@
         <!-- <h2 class="text-center text-light my-3 py-2 display-6 fw-bold">Best Selling</h2> -->
         <div class="row" id="display"></div>
       </div>
+
+      
+      <!-- <div id="bookList"> -->
+        <!-- Display book list here -->
+      <!-- </div> -->
 
       <script>
         fetch('books.json')
@@ -111,6 +116,47 @@
             console.error('Error fetching data:', error);
           });
 
-      </script>
+      
+      
+
+  // function displayBooks(books) {
+  //   const bookListDiv = document.getElementById('bookList');
+  //   bookListDiv.innerHTML = '';
+
+  //   books.forEach(book => {
+  //     const bookDiv = document.createElement('div');
+  //     bookDiv.innerHTML = `
+  //       <img src="${book.cover_image}" alt="${book.title}" style="max-width: 100px;"/>
+  //       <h3>${book.title}</h3>
+  //       <p><strong>Author:</strong> ${book.author}</p>
+  //       <p><strong>Category:</strong> ${book.category}</p>
+  //       <p><strong>Price:</strong> ${book.price}</p>
+  //       <p><strong>Description:</strong> ${book.description}</p>
+  //     `;
+  //     bookListDiv.appendChild(bookDiv);
+  //   });
+  // }
+
+  // function searchBooks() {
+  //   const searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+  //   fetch('books.json')
+  //     .then(response => response.json())
+  //     .then(booksData => {
+  //       const filteredBooks = booksData.filter(book => {
+  //         return (
+  //           book.title.toLowerCase().includes(searchInput) ||
+  //           book.category.toLowerCase().includes(searchInput)
+  //         );
+  //       });
+
+  //       displayBooks(filteredBooks);
+  //     })
+  //     .catch(error => console.error('Error fetching data:', error));
+  // }
+
+  // // Initially, display all books
+  // searchBooks();
+</script>
 </body>
 </html>
