@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="javascript/dystopian.js"></script>
+    <script src="javascript/cart.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -72,7 +72,7 @@
   </div>
   
   <div class="container justify-content-center my-5" id="cartDisplay">
-    <!-- Cart items will be displayed here -->
+   
   </div>
   <div class="container justify-content-center  text-dark">
     <div><h4 class="display6 text-center ">Total Amount: <span id="totalAmount">$0.00</span><button class="btn btn-success text-light mx-3" type="submit" id="paybtn"><a href="payment.html" style="text-decoration: none; color: white; ">Proceed to payment</a> </button></h4></div>
@@ -108,89 +108,5 @@
   </html>
   
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const cartDisplay = document.getElementById('cartDisplay');
-      const totalAmount = document.getElementById('totalAmount');
-  
-      // Retrieve cart items from localStorage
-      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  
-      // Display cart items
-      function displayCartItems() {
-          cartDisplay.innerHTML = '';
-  
-          if (cartItems.length > 0) {
-              let totalPrice = 0;
-  
-              cartItems.forEach((book, index) => {
-                  // Ensure quantity defaults to 1 if not set
-                  if (!book.quantity || book.quantity < 1) {
-                      book.quantity = 1;
-                  }
-  
-                  totalPrice += (book.price) * book.quantity;
-  
-                  // Display each book in the cart with quantity adjustment and remove button
-                  cartDisplay.innerHTML += `
-                 
-                  <div class="container d-flex justify-content-center">
-                    <div class="card mb-3" style="max-width: 20rem;">
-                      <div class="card-body">
-                        <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text">${book.description}</p>
-                        <p class="card-text">$${book.price}</p>
-                        <div class="input-group mb-3">
-                          <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity(${index}) " id="searchbtn">-</button>
-                          <input type="text" class="form-control" value="${book.quantity}" id="quantity${index}" readonly>
-                          <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity(${index})" id="searchbtn">+</button>
-                          <button class="btn btn-danger" onclick="removeItem(${index})">Remove</button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
 
-                  `;
-              });
-  
-              // Display total amount
-              totalAmount.textContent = `$${totalPrice.toFixed(2)}`;
-          } else {
-              // Display a message if the cart is empty
-              cartDisplay.innerHTML = '<p>Your cart is empty, populate it First.</p>';
-              totalAmount.textContent = '$0.00';
-          }
-      }
-  
-      displayCartItems();
-  
-      // Function to decrease quantity
-      window.decreaseQuantity = function(index) {
-          if (cartItems[index].quantity > 1) {
-              cartItems[index].quantity--;
-              displayCartItems();
-              updateLocalStorage();
-          }
-      };
-  
-      // Function to increase quantity
-      window.increaseQuantity = function(index) {
-          cartItems[index].quantity++;
-          displayCartItems();
-          updateLocalStorage();
-      };
-  
-      // Function to remove item from cart
-      window.removeItem = function(index) {
-          cartItems.splice(index, 1);
-          displayCartItems();
-          updateLocalStorage();
-      };
-  
-      // Update localStorage with the modified cart items
-      function updateLocalStorage() {
-          localStorage.setItem('cartItems', JSON.stringify(cartItems));
-      }
-  });
-  </script>
   

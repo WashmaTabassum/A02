@@ -45,6 +45,19 @@ p {
   padding: 0px 0;
 }
 
+.navbar .navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+  background-color: rgba(67, 104, 91, 0.5);
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #9cc5b2;
+  color: #000;
+}
+
 .carousel {
   height: auto;
   width: 100%;
@@ -164,9 +177,6 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  /* Company information section */
-  /* Social media icons section */
-  /* Additional information section */
 }
 
 .footer #foot-container .footer-info {
@@ -202,7 +212,6 @@ p {
 
 .footer #foot-container .social-icons .social-icon:hover {
   color: #55acee;
-  /* Change color on hover */
 }
 
 .footer #foot-container .additional-info {

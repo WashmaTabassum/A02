@@ -11,7 +11,6 @@
       
             books.forEach(book => {
                 
-                // Generate Bootstrap card HTML for each book
                 let htmlSegment = `
                   <div class="col-md-4">
                     <div class="card mb-3 mx-1 my-4">
