@@ -10,10 +10,7 @@ fetch('books.json')
   let html2='';
 
   books.forEach(book => {
-    if (book.category == "Classic") {
-      
-
-      // Generate Bootstrap card HTML for each book
+    if (book.category == "Contemporary") {
       let htmlSegment = `
         <div class="col-md-4">
           <div class="card mb-3 mx-1 my-4">
@@ -41,7 +38,6 @@ fetch('books.json')
 .catch(error => {
   console.error('Error fetching data:', error);
 });
-
 
 let cartItems = [];
           let booksData = [];
