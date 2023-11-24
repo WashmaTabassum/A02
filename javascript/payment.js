@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 const tableRow = `
                     <tr>
-                        <th scope="row">${index + 1}</th>
+                        <td>${index + 1}</td>
                         <td>${book.title}</td>
                         <td>${book.description}</td>
                         <td>$${book.price}</td>
