@@ -21,10 +21,10 @@ fetch('books.json')
             <div class="card-body">
               <h5 class="card-title">${book.title}</h5>
               <p class="card-text">${book.description}</p>
-              <p class="card-text">${book.price}</p>
+              <p class="card-text">$${book.price}</p>
               <div class="button-container">
                 <button type="button" class="btn custom-button text-light" id="button-style" onclick="addtoCart(${book.id})">Add to cart</button>
-                <button type="button" class="btn custom-button text-light" id="button-style">View Cart</button>
+                <button type="button" class="btn custom-button text-light" id="button-style" onclick="window.location.href='cart.html'">View Cart</button>
               </div>
             </div>
           </div>
@@ -105,14 +105,15 @@ function fetchBooksData() {
 }
 
 function addtoCart(bookID) {
-    const selectedBook = booksData.find(book => book.id == bookID);
-    if (selectedBook) {
-      cartItems.push(selectedBook);
-      console.log("Book added to cart: ", selectedBook);
-    } else {
-      console.log("Book not found with ID: ", bookID);
-    }
+  const selectedBook = booksData.find(book => book.id == bookID);
+  if (selectedBook) {
+    cartItems.push(selectedBook);
+    localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Store cart items in localStorage
+    console.log("Book added to cart: ", selectedBook);
+  } else {
+    console.log("Book not found with ID: ", bookID);
   }
+}
 
 // Call the function to fetch books data
 fetchBooksData();

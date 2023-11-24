@@ -4,7 +4,7 @@
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "category": "Fiction",
-    "price": "$12.99",
+    "price": "12.99",
     "description": "Classic novel in the American South during the 1930s.",
     "cover_image": "assets/book1.jpg"
   },
@@ -13,7 +13,7 @@
     "title": "1984",
     "author": "George Orwell",
     "category": "Dystopian",
-    "price": "$9.99",
+    "price": "9.99",
     "description": "Classic dystopian novel about totalitarianism and surveillance.",
     "cover_image": "assets/book2.jpg"
   },
@@ -22,7 +22,7 @@
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "category": "Classic",
-    "price": "$11.50",
+    "price": "11.50",
     "description": "A story of the Jazz Age and the American Dream.",
     "cover_image": "assets/book3.jpg"
   },
@@ -31,7 +31,7 @@
     "title": "Moby-Dick",
     "author": "Herman Melville",
     "category": "Classic",
-    "price": "$13.25",
+    "price": "13.25",
     "description": "Novel about voyage of whaling ship Pequod.",
     "cover_image": "assets/book-4.jpg"
   },
@@ -40,7 +40,7 @@
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "category": "Science Fiction",
-    "price": "$10.75",
+    "price": "10.75",
     "description": "A dystopian social science fiction novel.",
     "cover_image": "assets/book-5.jpg"
   },
@@ -49,7 +49,7 @@
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "category": "Classic",
-    "price": "$9.99",
+    "price": "9.99",
     "description": "Classic romantic novel of manners.",
     "cover_image": "assets/book-6.jpg"
   },
@@ -58,7 +58,7 @@
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "category": "Fiction",
-    "price": "$8.50",
+    "price": "8.50",
     "description": "Novel known for themes of teenage angst.",
     "cover_image": "assets/book7.jpg"
   },
@@ -67,7 +67,7 @@
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "category": "Fantasy",
-    "price": "$15.99",
+    "price": "15.99",
     "description": "High-fantasy novel series.",
     "cover_image": "assets/book-8.jpg"
   },
@@ -76,7 +76,7 @@
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "category": "Fantasy",
-    "price": "$11.75",
+    "price": "11.75",
     "description": "Prequel to The Lord of the Rings.",
     "cover_image": "assets/book-9.jpg"
   },
@@ -85,7 +85,7 @@
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "category": "Mystery",
-    "price": "$14.25",
+    "price": "14.25",
     "description": "Mystery thriller novel.",
     "cover_image": "assets/book-10.jpg"
   },
@@ -94,7 +94,7 @@
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "category": "Fiction",
-    "price": "$10.50",
+    "price": "10.50",
     "description": "Philosophical novel.",
     "cover_image": "assets/book-11.jpg"
   },
@@ -103,7 +103,7 @@
     "title": "A Tale of Two Cities",
     "author": "Charles Dickens",
     "category": "Classic",
-    "price": "$12.25",
+    "price": "12.25",
     "description": "Historical novel during the French Revolution.",
     "cover_image": "assets/book-12.jpg"
   },
@@ -112,7 +112,7 @@
     "title": "War and Peace",
     "author": "Leo Tolstoy",
     "category": "Historical Fiction",
-    "price": "$16.99",
+    "price": "16.99",
     "description": "Epic novel set during the Napoleonic Wars.",
     "cover_image": "assets/book-13.jpg"
   },
@@ -121,7 +121,7 @@
     "title": "The Picture of Dorian Gray",
     "author": "Oscar Wilde",
     "category": "Classic",
-    "price": "$11.99",
+    "price": "11.99",
     "description": "Gothic and philosophical novel.",
     "cover_image": "assets/book-14.jpg"
   },
@@ -130,7 +130,7 @@
     "title": "The Adventures of Huckleberry Finn",
     "author": "Mark Twain",
     "category": "Classic",
-    "price": "$10.99",
+    "price": "10.99",
     "description": "Novel known for its social commentary.",
     "cover_image": "assets/book-15.jpg"
   },
@@ -139,7 +139,7 @@
     "title": "Jane Eyre",
     "author": "Charlotte Bronte",
     "category": "Classic",
-    "price": "$9.50",
+    "price": "9.50",
     "description": "Autobiographical novel.",
     "cover_image": "assets/book-16.jpg"
   },
@@ -148,7 +148,7 @@
     "title": "The Road",
     "author": "Cormac McCarthy",
     "category": "Dystopian",
-    "price": "$13.75",
+    "price": "13.75",
     "description": "Post-apocalyptic novel.",
     "cover_image": "assets/book-17.jpg"
   },
@@ -157,7 +157,7 @@
     "title": "Frankenstein",
     "author": "Mary Shelley",
     "category": "Gothic",
-    "price": "$11.25",
+    "price": "11.25",
     "description": "Gothic novel about science and creation.",
     "cover_image": "assets/book-18.jpg"
   },
@@ -166,7 +166,7 @@
     "title": "The Stand",
     "author": "Stephen King",
     "category": "Horror",
-    "price": "$14.50",
+    "price": "14.50",
     "description": "Post-apocalyptic horror/fantasy novel.",
     "cover_image": "assets/book-19.jpg"
   },
@@ -175,7 +175,7 @@
     "title": "Crime and Punishment",
     "author": "Fyodor Dostoevsky",
     "category": "Classic",
-    "price": "$12.50",
+    "price": "12.50",
     "description": "Psychological novel.",
     "cover_image": "assets/book-20.jpg"
   },
@@ -184,7 +184,7 @@
     "title": "Les Miserables",
     "author": "Victor Hugo",
     "category": "Classic",
-    "price": "$13.99",
+    "price": "13.99",
     "description": "Historical novel set in France.",
     "cover_image": "assets/book-21.jpg"
   },
@@ -193,7 +193,7 @@
     "title": "The Shining",
     "author": "Stephen King",
     "category": "Horror",
-    "price": "$11.75",
+    "price": "11.75",
     "description": "Horror novel.",
     "cover_image": "assets/book-22.jpg"
   },
@@ -202,7 +202,7 @@
     "title": "The Odyssey",
     "author": "Homer",
     "category": "Classic",
-    "price": "$10.25",
+    "price": "10.25",
     "description": "Ancient Greek epic poem.",
     "cover_image": "assets/book-23.jpg"
   },
@@ -211,7 +211,7 @@
     "title": "The Stranger",
     "author": "Albert Camus",
     "category": "Philosophical",
-    "price": "$12.25",
+    "price": "12.25",
     "description": "Existential novel.",
     "cover_image": "assets/book-24.jpg"
   },
@@ -220,7 +220,7 @@
     "title": "Gone with the Wind",
     "author": "Margaret Mitchell",
     "category": "Historical Fiction",
-    "price": "$13.50",
+    "price": "13.50",
     "description": "Historical novel set during Civil War.",
     "cover_image": "assets/book25.jpg"
   },
@@ -229,7 +229,7 @@
     "title": "The Kite Runner",
     "author": "Khaled Hosseini",
     "category": "Contemporary",
-    "price": "$10.99",
+    "price": "10.99",
     "description": "Contemporary novel set in Afghanistan.",
     "cover_image": "assets/book-26.jpg"
   },
@@ -238,7 +238,7 @@
     "title": "The Bell Jar",
     "author": "Sylvia Plath",
     "category": "Autobiographical",
-    "price": "$11.50",
+    "price": "11.50",
     "description": "Autobiographical novel.",
     "cover_image": "assets/book-27.jpg"
   },
@@ -247,7 +247,7 @@
     "title": "The Count of Monte Cristo",
     "author": "Alexandre Dumas",
     "category": "Adventure",
-    "price": "$12.99",
+    "price": "12.99",
     "description": "Adventure novel.",
     "cover_image": "assets/book-28.jpg"
   },
@@ -256,7 +256,7 @@
     "title": "Anna Karenina",
     "author": "Leo Tolstoy",
     "category": "Classic",
-    "price": "$12.75",
+    "price": "12.75",
     "description": "Tragic novel.",
     "cover_image": "assets/book-29.jpg"
   },
@@ -265,7 +265,7 @@
     "title": "The Grapes of Wrath",
     "author": "John Steinbeck",
     "category": "Classic",
-    "price": "$11.99",
+    "price": "11.99",
     "description": "Novel set during the Great Depression.",
     "cover_image": "assets/book-30.jpg"
   }
