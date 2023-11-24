@@ -106,3 +106,90 @@
   </body>
   </html>
   
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const cartDisplay = document.getElementById('cartDisplay');
+      const totalAmount = document.getElementById('totalAmount');
+  
+      // Retrieve cart items from localStorage
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  
+      // Display cart items
+      function displayCartItems() {
+          cartDisplay.innerHTML = '';
+  
+          if (cartItems.length > 0) {
+              let totalPrice = 0;
+  
+              cartItems.forEach((book, index) => {
+                  // Ensure quantity defaults to 1 if not set
+                  if (!book.quantity || book.quantity < 1) {
+                      book.quantity = 1;
+                  }
+  
+                  totalPrice += parseFloat(book.price) * book.quantity;
+  
+                  // Display each book in the cart with quantity adjustment and remove button
+                  cartDisplay.innerHTML += `
+                 
+                  <div class="container d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 20rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">${book.title}</h5>
+                        <p class="card-text">${book.description}</p>
+                        <p class="card-text">$${book.price}</p>
+                        <div class="input-group mb-3">
+                          <button class="btn btn-outline-secondary" type="button" onclick="decreaseQuantity(${index})">-</button>
+                          <input type="text" class="form-control" value="${book.quantity}" id="quantity${index}" readonly>
+                          <button class="btn btn-outline-secondary" type="button" onclick="increaseQuantity(${index})">+</button>
+                          <button class="btn btn-danger" onclick="removeItem(${index})">Remove</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                  `;
+              });
+  
+              // Display total amount
+              totalAmount.textContent = `$${totalPrice.toFixed(2)}`;
+          } else {
+              // Display a message if the cart is empty
+              cartDisplay.innerHTML = '<p>Your cart is empty, populate it First.</p>';
+              totalAmount.textContent = '$0.00';
+          }
+      }
+  
+      displayCartItems();
+  
+      // Function to decrease quantity
+      window.decreaseQuantity = function(index) {
+          if (cartItems[index].quantity > 1) {
+              cartItems[index].quantity--;
+              displayCartItems();
+              updateLocalStorage();
+          }
+      };
+  
+      // Function to increase quantity
+      window.increaseQuantity = function(index) {
+          cartItems[index].quantity++;
+          displayCartItems();
+          updateLocalStorage();
+      };
+  
+      // Function to remove item from cart
+      window.removeItem = function(index) {
+          cartItems.splice(index, 1);
+          displayCartItems();
+          updateLocalStorage();
+      };
+  
+      // Update localStorage with the modified cart items
+      function updateLocalStorage() {
+          localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      }
+  });
+  </script>
+  
