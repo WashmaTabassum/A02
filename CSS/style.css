@@ -142,8 +142,8 @@ p {
 }
 
 .card {
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 12px 24px rgba(67, 104, 91, 0.5);
+          box-shadow: 0 12px 24px rgba(67, 104, 91, 0.5);
   -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
   transition: background-color 0.3s, -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s, background-color 0.3s;

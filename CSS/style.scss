@@ -150,7 +150,7 @@ p{
 }
   
 .card {
-    box-shadow: $mediumShadow;
+    box-shadow: $strongShadow;
     transition: box-shadow 0.3s, background-color 0.3s; 
         &:hover {
             box-shadow: $mediumShadow, $strongShadow; 
