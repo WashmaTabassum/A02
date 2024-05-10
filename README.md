@@ -1,10 +1,10 @@
-**## Online Library Managment System**
-
+# Online Library Managment System
+## Introduction
 This is an online books ordering website where users can browse, search for, and order books online. The website provides features such as showcasing best-selling books, managing a shopping cart, contacting the website administrators, and completing the checkout process.
 
-###**Features**
+## Features
 
-__Homepage: Showcase best-selling books to attract users and encourage exploration.
+<span style ="font:large"><i>Homepage:</i></span> Showcase best-selling books to attract users and encourage exploration.
 __Cart: Allow users to add books to their shopping cart for easy checkout.
 __Contact Us: Provide a contact form for users to reach out to website administrators.
 __Checkout: Facilitate the checkout process for users to complete their book orders.
